@@ -1,15 +1,13 @@
 #! /bin/bash
 
-# This script updates all Docker containers on VM 110
+# This script updates all Docker containers on VM 111
 
 paths=(
-    "/home/mounir/compose/portainer"
-    "/home/mounir/compose/filebrowser"
-    "/home/mounir/compose/ntfy"
-    "/home/mounir/mnt/drive/immich"
+    "/home/mounir/homepage"
+    "/home/mounir/bookstack"
 )
 
-for path in "$paths[@]"; do
+for path in "${paths[@]}"; do
     echo "Updating containers in $path"
     cd "$path" || { echo "Failed to change directory to $path"; continue; }
 
