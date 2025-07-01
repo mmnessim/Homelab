@@ -1,0 +1,60 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+- Server Management:
+    - Proxmox:
+        href: https://192.168.68.74:8006/
+        description: Manage VMs
+    - Portainer:
+        href: https://100.85.238.70:9443
+        description: Manage Docker Containers
+    - Filebrowser:
+        href: http://100.85.238.70:447
+        description: Manage files and folders
+    - Tailscale:
+        href: https://login.tailscale.com/admin/machines
+        description: Manage VPN
+    - pfSense:
+        href: http://192.168.68.33/
+        description: Firewall
+
+- Services and Media:
+    - Immich:
+        href: http://100.85.238.70:2283/photos
+        description: Shared photo library
+    - Code Server:
+        href: http://100.87.217.73:8443/?folder=/config/workspace
+        description: VSCode in browser
+    - Gitea:
+        href: http://100.87.217.73:3001/
+        description: Git Respositories
+    - Fedora Dashboard:
+        href: https://192.168.68.67:9090/system
+        description: Fedora Linux Dashboard
+    - SearXNG:
+        href: http://100.85.238.70:9090/
+        description: Search aggregator
+    - Flatnotes:
+        href: http://100.85.238.70:8080
+        description: Note taking
+
+
+- Misc:
+    - Homepage:
+        href: http://100.85.238.70:447/filebrowser/files/compose/homepage/config/
+        description: Configure this homepage
+    - Pihole:
+        href: http://100.85.238.70/admin/index.php
+        description: Ad blocking and DNS
+    - NTFY:
+        href: http://100.85.238.70:82/
+        description: Push notification service
+
+- Coding Projects:
+    - Weight Tracker:
+        href: http://100.85.238.70:5002/
+        description: Trying to drop some lbs. Python, Flask, sqlite3
+    - Go Chess Picker:
+        href: https://mnessim.com
+        description: Guess the ELO, publicly available
