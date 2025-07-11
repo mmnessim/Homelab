@@ -3,3 +3,6 @@ vms/
 # Private scripts for ssh access
 tailscale.ps1
 tailscale.sh
+
+# Ansible Vault
+secrets.yml

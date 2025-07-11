@@ -31,4 +31,3 @@ echo -e "\n--- Disk Usage ---"
 df -h | tee -a $LOGFILE
 
 echo -e "\n===== End of Report =====" | tee -a $LOGFILE
-
