@@ -6,3 +6,5 @@ tailscale.sh
 
 # Ansible Vault
 secrets.yml
+
+inventory.ini
