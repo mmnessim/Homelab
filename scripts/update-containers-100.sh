@@ -5,8 +5,8 @@
 paths=(
     "/home/mounir/gitea"
     "/home/mounir/code-server"
-    "/home/mounir/Go-Profile"
-    "/home/mounir/Go-Chess-Picker"
+#    "/home/mounir/Go-Profile"
+#    "/home/mounir/Go-Chess-Picker"
 )
 
 for path in "${paths[@]}"; do
