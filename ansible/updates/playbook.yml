@@ -1,0 +1,22 @@
+---
+- name: Update Playbook
+  hosts: all
+  become: yes
+  vars_files:
+    - secrets.yml
+  tasks:
+    - name: Upgrade all apt packages
+      apt:
+        upgrade: dist
+        update_cache: yes
+
+    - name: Remove unused packages
+      apt:
+        autoremove: yes
+
+    - name: Clean apt cache
+      apt:
+        autoclean: yes
+
+    - name: Run update.sh script
+      script: "{{ update_script }}"
